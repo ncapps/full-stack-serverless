@@ -1,0 +1,26 @@
+{
+  "name": "Node.js 14",
+  "dockerFile": "Dockerfile",
+  // Set *default* container specific settings.json values on container create.
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/zsh"
+  },
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "dsznajder.es7-react-js-snippets"
+  ],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "yarn install",
+  // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "node",
+  // "mounts": [
+  //   "source=amplify-app-tutorial-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  // ],
+  // "postCreateCommand": "sudo chown node node_modules && npm install && bash .devcontainer/scripts/configure-git.sh"
+  "postCreateCommand": "bash .devcontainer/scripts/configure-git.sh"
+}

@@ -21,7 +21,7 @@
 - GraphQL introduces a defined and consistent specification for interacting with APIs in the form of three operations: Queries (reads), Mutations (writes / updates), and Subscriptions (real-time data)
 - These operations are defined as part of a main Schema that also provides a contract between the client and the server in the form of GraphQL Types
 
-## 2. Creating Your First App
+## 2. Getting Started with AWS Amplify
 
 - With Amplify, there are 2 main way of creating APIs
   1. Amazon API Gatway and Lambda function
@@ -40,6 +40,16 @@
 - APIs can can be created with `amplify add api`
 - A single API Gateway endpoint can be configured to work with multiple Lambda functions
 - Lambda functions are essentially self-contained node.js applications. In this example, we ran an express application in order to handle REST methods
+
+## 3. Creating Your First App
+
+- GraphQL is an API specification. It is a query language for APIs and a runtime for fulfulling those queries with your data
+- A GraphQL API consists of three main parts:
+  1. Schema: Defines the data model and operations that can be executed against the API
+  2. Resolvers: Tell the GraphQL operations what to do when being executed, and will typically interact with a data source or another API
+  3. Data sources
+- AWS AppSync is a managed service that allows us to deploy a GraphQL API, resolvers, and data sources quickly using the Amplify CLI
+-
 
 # Acknowledgments
 

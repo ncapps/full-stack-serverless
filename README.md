@@ -49,7 +49,14 @@
   2. Resolvers: Tell the GraphQL operations what to do when being executed, and will typically interact with a data source or another API
   3. Data sources
 - AWS AppSync is a managed service that allows us to deploy a GraphQL API, resolvers, and data sources quickly using the Amplify CLI
--
+- The AWS Amplify GraphQL Transform library allows you to annotate a GraphQL schema with different directives like `@model, @connection, @auth`
+- `useEffect` is similar to `componentDidMount`. It will run after the initial render of the componet is committed to the screen. The second argument is an array of values that the effect depends on to know whether it should be called again during a render. If the array is empty, it will not be called on additional renders.
+- Updating the local state before the API call is successful is known as an **optimistic response**. It is done because we want the UI to be fast and update as soon as the user adds a new note. If the API call fails, you can implement functionality in the `catch` block to notify the user of the error
+- With GraphQL subscriptions, you can subscribe to different events. When one of these events happens, the data from the event gets sent to the client that initialized the subscription.
+- The `useReducer` hook allows you to manage application state and is preferable to `useState` when having more complex application logic
+- GraphQL **queries** are used for fetching data
+- GraphQL **mutations** are used for creating, updating, or deleting data
+- You can subscribe to API real-time events with GraphQL **subscriptions**
 
 # Acknowledgments
 

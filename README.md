@@ -58,6 +58,21 @@
 - GraphQL **mutations** are used for creating, updating, or deleting data
 - You can subscribe to API real-time events with GraphQL **subscriptions**
 
+## 4. Introduction to Authentication
+
+- Amazon Cognito is a fully managed identity service
+- Cognito has two main pieces:
+  1. **User Pools**: provides a user directory that stores all your users
+  2. **Identity Pools**: allows you to authorize users that are signed in to your application to access AWS services. The source of _identities_ could be a Cognito User Pool or Facebook or Google
+- You can create and configure Amazon Cognito services directly from the Amplify CLI
+- Amplify has pre-configured UI components that allow you to scaffold out entire authentication flows
+- There are two main ways to implement authentication on the client using Amplify
+  1. **Auth class**: Amplify `Auth` class has methods that allow you to handle everything associated with user management
+  2. **Framework-specific authentication components**: These components will render an entire (customizable) authenication flow
+- Use the `withAuthenticator` HOC to quickly get up and running with a pre-configured authentication flow
+- Use the `Auth` class for more fine grained control over authentication and to get data about the currently signed in user
+- Ant Design helps you get started with pre-configured design without having to write any style-specific code
+
 # Acknowledgments
 
 Full Stack Serverless by Nader Dabit, O'Reilly Media, 2020

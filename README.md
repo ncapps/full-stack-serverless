@@ -73,6 +73,12 @@
 - Use the `Auth` class for more fine grained control over authentication and to get data about the currently signed in user
 - Ant Design helps you get started with pre-configured design without having to write any style-specific code
 
-# Acknowledgments
+## 5. Custom Authentication Strategies
+
+- Use the `Auth` class for handling direct API calls to the Amazon Cognito authentication service
+- Handling custom form state can be verbose, analyze the tradeoffs between rolling your own authentication service flow vs using something like `withAuthenticator` HOC
+- Authentication is complex. By using a managed identity service like Amazon Cognito, we've abstracted away all of the back end code and logic. Now we just need to interact with the authentication APIs and manage the local state.
+
+## Acknowledgments
 
 Full Stack Serverless by Nader Dabit, O'Reilly Media, 2020

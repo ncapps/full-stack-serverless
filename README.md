@@ -79,6 +79,12 @@
 - Handling custom form state can be verbose, analyze the tradeoffs between rolling your own authentication service flow vs using something like `withAuthenticator` HOC
 - Authentication is complex. By using a managed identity service like Amazon Cognito, we've abstracted away all of the back end code and logic. Now we just need to interact with the authentication APIs and manage the local state.
 
+## 6. Serverless Functions in Depth Part 1
+
+- Lambda functions can be invoked from many different event types including API calls, image uploads, database operations, and authentication events
+- The `event` data structure differs based on the type of event invoking the Lambda function
+- When a Lambda trigger is enabled by the Amplify CLI, additional IAM permissisons are given to the function allowing it to directly interact with other services
+
 ## Acknowledgments
 
 Full Stack Serverless by Nader Dabit, O'Reilly Media, 2020

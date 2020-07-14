@@ -85,6 +85,13 @@
 - The `event` data structure differs based on the type of event invoking the Lambda function
 - When a Lambda trigger is enabled by the Amplify CLI, additional IAM permissisons are given to the function allowing it to directly interact with other services
 
+## 7. Serverless Functions in Depth Part 2
+
+- With Amplify, there are two manin ways to create APIs: GraphQL and REST
+- Running an express server in a Lambda function is a great way to extend the functionality of a single function
+- The `API` category requires two arguments when working with REST APIs: the api name and the path. The third argument is optional, it's an object that can contain any arguments you may want to send in a post request
+- Use the DynamoDB Document client when interacting with DynamoDB from a Node.js Lambda function s
+
 ## Acknowledgments
 
 Full Stack Serverless by Nader Dabit, O'Reilly Media, 2020

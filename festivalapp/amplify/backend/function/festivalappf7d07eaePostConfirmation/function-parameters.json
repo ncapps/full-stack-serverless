@@ -1,0 +1,16 @@
+{
+  "trigger": true,
+  "modules": [
+    "add-to-group"
+  ],
+  "parentResource": "festivalappf7d07eae",
+  "functionName": "festivalappf7d07eaePostConfirmation",
+  "resourceName": "festivalappf7d07eaePostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/usr/local/share/npm-global/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/utils/../triggers/PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "roleName": "festivalappf7d07eaePostConfirmation",
+  "skipEdit": true,
+  "GROUP": "Admin"
+}

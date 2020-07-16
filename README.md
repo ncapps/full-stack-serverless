@@ -90,7 +90,15 @@
 - With Amplify, there are two manin ways to create APIs: GraphQL and REST
 - Running an express server in a Lambda function is a great way to extend the functionality of a single function
 - The `API` category requires two arguments when working with REST APIs: the api name and the path. The third argument is optional, it's an object that can contain any arguments you may want to send in a post request
-- Use the DynamoDB Document client when interacting with DynamoDB from a Node.js Lambda function s
+- Use the DynamoDB Document client when interacting with DynamoDB from a Node.js Lambda functions
+
+## 8. AWS AppSync in Depth
+
+- The GraphQL transform is a library of directives that allows use to "decorate" a GraphQL schema and add additional functionality
+- `@auth`: allows us to pass in an array of authorization rules
+- `@key`: Enables us to add Global Secondary Indexes and sort keys to a DynamoDB table for custom data access patterns
+- `@connection`: Allows us to model relationships between types
+- When creating an API with multiple authorization types, you will have a **primary** authorization type. You can override the primary authorization type with the `authMode` parameter to the API class defining the authorization type
 
 ## Acknowledgments
 

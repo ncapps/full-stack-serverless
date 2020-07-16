@@ -100,6 +100,10 @@
 - `@connection`: Allows us to model relationships between types
 - When creating an API with multiple authorization types, you will have a **primary** authorization type. You can override the primary authorization type with the `authMode` parameter to the API class defining the authorization type
 
+## 9. Building Offline Apps with Amplify DataStore
+
+- Amplify DataStore introduces a client-side SDK that allows you to write and read from a local store and persists data locally using the locat engine of the platform (i.e., IndexDB for web and SQLite for native iOS and Android)
+
 ## Acknowledgments
 
 Full Stack Serverless by Nader Dabit, O'Reilly Media, 2020

@@ -109,6 +109,17 @@
   2. Optimistic concurrency: Latest written item to your database will be used
   3. Custom: Use a Lambda function and write custom business logic
 
+## 10. Working with Images and Storage
+
+- Amplify uses S3 as the Storage category for handling the storage of files
+- Working with S3 there are three types of file access available:
+  1. **Public**: Items accessible by all users of your app. In the `public/ path`. In order to viewed, Amplify SDK retrieves a temporarily signed URL of the resource. This is the default.
+  2. **Private**: Items are readable by all, but writable only by the creating user. Stored in the `private/{user_identity_id}` path. `user_identity_id` corresponds to the Amazon Cognito ID for that user.
+  3. **Protected**: Files are only accessible for an individual user. Stored in the `private/{user_identity_id}` path.
+- When working with images, images cannot be referenced directly by their URL; they must be signed using a `Storage.get` call.
+- The signed URL is valid for 15 minutes by default. The `expires` option configure the duration a signed URL is valid.
+- When working with an array of images, you can map over the array and use `Promise.all` to get a signed URL for each item in the array
+
 ## Acknowledgments
 
 Full Stack Serverless by Nader Dabit, O'Reilly Media, 2020

@@ -120,6 +120,18 @@
 - The signed URL is valid for 15 minutes by default. The `expires` option configure the duration a signed URL is valid.
 - When working with an array of images, you can map over the array and use `Promise.all` to get a signed URL for each item in the array
 
+## 11. Hosting: Deploying Your Application to the Amplify Console with CI and CD
+
+- Amplify Console is a fully managed hosting service that provides a simple workflow for deploying static sites and full stack serverless applications
+- You can deploy a project to Amplify Console hosting directly from the CLI with `amplify publish`. This deploys both the frontend and backend.
+- To enable a custom domain, we need to do three things:
+  1. Add the domain in Amazon Route 53
+  2. Set the nameservers in the DNS settings of the domain provider for the domain you are using
+  3. Configure the Amplify Console app to use the domain added in Route 53
+- Amplify Console hosts both backend and frontend deployments
+- You can deploy the front via the Amplify CLI or a Git repository
+- Once the app is hosted, you can set up things like password protection, custom domains, and branch deployments
+
 ## Acknowledgments
 
 Full Stack Serverless by Nader Dabit, O'Reilly Media, 2020

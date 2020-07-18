@@ -103,6 +103,11 @@
 ## 9. Building Offline Apps with Amplify DataStore
 
 - Amplify DataStore introduces a client-side SDK that allows you to write and read from a local store and persists data locally using the locat engine of the platform (i.e., IndexDB for web and SQLite for native iOS and Android)
+- DataStore syncs your data to the cloud when you have an internet connection
+- DataStore handles conflict detection and resolution
+  1. AutoMerge: GraphQL type informatino on an object is inspected at runtime to perform merge operations
+  2. Optimistic concurrency: Latest written item to your database will be used
+  3. Custom: Use a Lambda function and write custom business logic
 
 ## Acknowledgments
 
